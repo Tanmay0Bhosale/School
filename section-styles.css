@@ -141,3 +141,16 @@ p {
     background-color: darkred;
     transform: scale(1.05);
 }
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(222, 19, 19, 0.8), 0 0 10px rgba(128, 0, 0, 0.6), 0 0 15px rgba(128, 0, 0, 0.4); }
+    50% { text-shadow: 0 0 10px rgb(202, 10, 10), 0 0 20px rgba(128, 0, 0, 0.8), 0 0 30px rgba(128, 0, 0, 0.6); }
+    100% { text-shadow: 0 0 5px rgba(169, 12, 12, 0.8), 0 0 10px rgba(128, 0, 0, 0.6), 0 0 15px rgba(128, 0, 0, 0.4); }
+  }
+  
+.glowing-text {
+    color: rgb(255, 255, 255);
+     /* Adjust as needed */
+    font-weight: bold;
+    animation: glow 1.5s infinite alternate;
+}
