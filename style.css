@@ -86,3 +86,15 @@ p {
     }
 }
 
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(128, 0, 0, 0.6), 0 0 15px rgba(128, 0, 0, 0.4); }
+    50% { text-shadow: 0 0 10px rgb(195, 59, 59), 0 0 20px rgba(128, 0, 0, 0.8), 0 0 30px rgba(128, 0, 0, 0.6); }
+    100% { text-shadow: 0 0 5px rgba(225, 126, 126, 0.8), 0 0 10px rgba(128, 0, 0, 0.6), 0 0 15px rgba(128, 0, 0, 0.4); }
+  }
+  
+.glowing-text {
+    color: rgb(128, 0, 0);
+     /* Adjust as needed */
+    font-weight: bold;
+    animation: glow 1.5s infinite alternate;
+}
