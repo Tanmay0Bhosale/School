@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maths Section</title>
+    <link rel="stylesheet" href="./section-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mathematics Exhibition</h1>
+        <p>Explore the world of numbers and equations</p>
+
+        <br><br>
+
+        <div class="photo-grid">
+            <img src="./images/img 23.jpeg" alt="Maths Project 1">
+            <img src="./images/img 14.jpeg" alt="Maths Project 2">
+            <img src="./images/img 15.jpeg" alt="Maths Project 3">
+        </div>
+
+
+        <a href="./index.html" class="back-button">Back to Home</a>
+        <a href="./schoolmap.html" class="back-button">Explore More</a>
+
+        <audio id="audio7">
+            <source src="./Audio/Maths.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            window.onload = function() {
+                const audio = document.getElementById('audio7');
+                audio.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+            };
+        </script>
+    
+
+    </div>
+</body>
+</html>
+

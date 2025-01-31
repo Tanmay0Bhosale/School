@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Primary Section</title>
+    <link rel="stylesheet" href="./section-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pre-Primary Section</h1>
+        <p>Nurturing young minds with creativity, curiosity, and a love for learning!</p>
+
+        <div class="photo-grid">
+            <img src="./images/img 4.jpeg" alt="Maths Project 1">
+            <img src="./images/img 3.jpeg" alt="Maths Project 2">
+            <img src="./images/img 24.jpeg" alt="Maths Project 3">
+        </div>
+
+        <a href="./index.html" class="back-button">Back to Home</a>
+
+        <audio id="audio7">
+            <source src="./Audio/Pre primary section.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            window.onload = function() {
+                const audio = document.getElementById('audio7');
+                audio.play().catch(function(error) {
+                    console.log('Autoplay prevented:', error);
+                });
+            };
+        </script>
+
+    </div>
+</body>
+</html>
